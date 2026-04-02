@@ -10,7 +10,7 @@ dependencies = [
     "tiktoken",
     "pydantic>=2.0.0",
     "nest-asyncio",
-    "appdirs",
+    "platformdirs",
     "typer",
     "rich",
     "openai>=1.0.0",
