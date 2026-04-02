@@ -12,7 +12,7 @@ from threading import Lock, Thread
 from typing import List
 
 import requests
-from appdirs import user_data_dir
+from platformdirs import user_data_dir
 from pydantic import BaseModel, Field
 
 from ragas._version import __version__
