@@ -469,6 +469,7 @@ class TestDSPyOptimizer:
         fake_llm,
     ):
         """Test that cached results are returned on cache hit."""
+        pytest.importorskip("diskcache")
         from ragas.cache import DiskCacheBackend
         from ragas.optimizers.dspy_optimizer import DSPyOptimizer
 
@@ -537,6 +538,7 @@ class TestDSPyOptimizer:
         fake_llm,
     ):
         """Test that optimization runs on cache miss."""
+        pytest.importorskip("diskcache")
         from ragas.cache import DiskCacheBackend
         from ragas.optimizers.dspy_optimizer import DSPyOptimizer
 

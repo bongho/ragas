@@ -15,6 +15,7 @@ def temp_cache_dir(tmp_path):
 @pytest.fixture(scope="function")
 def cache_backend(temp_cache_dir):
     """Provide a DiskCacheBackend instance with a temporary directory."""
+    pytest.importorskip("diskcache")
     return DiskCacheBackend(cache_dir=temp_cache_dir)
 
 

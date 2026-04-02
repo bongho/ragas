@@ -1,8 +1,10 @@
 """Unit tests for embeddings caching functionality."""
 
-from unittest.mock import MagicMock
-
 import pytest
+
+pytest.importorskip("diskcache")
+
+from unittest.mock import MagicMock
 
 from ragas.cache import DiskCacheBackend
 from ragas.embeddings import embedding_factory
